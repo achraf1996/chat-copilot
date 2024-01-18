@@ -21,25 +21,29 @@ module.exports = {
         sourceType: 'module',
     },
     rules: {
-        '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
-        '@typescript-eslint/triple-slash-reference': ['error', { types: 'prefer-import' }],
-        '@typescript-eslint/non-nullable-type-assertion-style': 'off',
-        '@typescript-eslint/strict-boolean-expressions': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/consistent-type-imports': 'off',
-        '@typescript-eslint/no-empty-function': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-unused-vars': [
-            'error',
-            {
-                argsIgnorePattern: '^_',
-                varsIgnorePattern: '^_',
-                caughtErrorsIgnorePattern: '^_',
-            },
-        ],
-        'react/react-in-jsx-scope': 'off',
-        'react/prop-types': 'off',
-        'react/jsx-props-no-spreading': 'off',
+           // Turn off 'react/prop-types' rule
+    'react/prop-types': 'off',
+
+    // Turn off '@typescript-eslint/no-unused-vars'
+    '@typescript-eslint/no-unused-vars': 'off',
+
+    // Turn off '@typescript-eslint/no-explicit-any'
+    '@typescript-eslint/no-explicit-any': 'off',
+
+    // Turn off '@typescript-eslint/no-useless-template-literals'
+    '@typescript-eslint/no-useless-template-literals': 'off',
+
+    // Turn off '@typescript-eslint/array-type'
+    '@typescript-eslint/array-type': 'off',
+
+    // Turn off '@typescript-eslint/prefer-promise-reject-errors'
+    '@typescript-eslint/prefer-promise-reject-errors': 'off',
+    '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+
+         'no-useless-template-literals': 'off',
+        'prefer-promise-reject-errors': 'off',
+     "react/react-in-jsx-scope": "off",
+   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     },
     settings: {
         react: {

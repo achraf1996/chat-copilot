@@ -38,7 +38,7 @@ const setupSignalRConnectionToChatHub = () => {
     const connectionHubUrl = new URL('/messageRelayHub', BackendServiceUrl);
     const signalRConnectionOptions = {
         skipNegotiation: true,
-        transport: signalR.HttpTransportType.WebSockets,
+        transport: signalR.HttpTransportType.ServerSentEvents,
         logger: signalR.LogLevel.Warning,
     };
 
